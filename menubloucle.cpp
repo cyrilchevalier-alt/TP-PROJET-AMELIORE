@@ -1,9 +1,10 @@
 #include <iostream>
-#include "menuboucle.h"
+#include "affichageetmoyenne.h" // 1. On donne la définition de 'etudiant'
+#include "menuboucle.h"         // 2. On donne les prototypes des fonctions
 
 using namespace std;
 
-void ajouterEleve(Etudiant classe[], int &nbElv) {
+void ajouterEleve(etudiant classe[], int &nbElv) {
     if (nbElv < 30) {
         cout << "Nom de l'eleve : ";
         cin >> classe[nbElv].nom;
@@ -15,14 +16,14 @@ void ajouterEleve(Etudiant classe[], int &nbElv) {
     }
 }
 
-void afficherEleves(Etudiant classe[], int nbElv) {
+void afficherEleves(etudiant classe[], int nbElv) {
     cout << "--- Liste des eleves ---" << endl;
     for (int i = 0; i < nbElv; i++) {
         cout << classe[i].nom << " : " << classe[i].note << "/20" << endl;
     }
 }
 
-void calculerMoyenne(Etudiant classe[], int nbElv) {
+void calculerMoyenne(etudiant classe[], int nbElv) {
     if (nbElv == 0) return;
     float somme = 0;
     for (int i = 0; i < nbElv; i++) {
@@ -31,7 +32,7 @@ void calculerMoyenne(Etudiant classe[], int nbElv) {
     cout << "Moyenne de la classe : " << somme / nbElv << endl;
 }
 
-void meilleureNote(Etudiant classe[], int nbElv) {
+void meilleureNote(etudiant classe[], int nbElv) {
     if (nbElv == 0) return;
     int indexMax = 0;
     for (int i = 1; i < nbElv; i++) {

@@ -2,12 +2,8 @@
 #define MENU_BOUCLE_H
 
 #include <string>
+#include "affichageetmoyenne.h" // <--- AJOUTE ÇA pour que "Etudiant" soit reconnu
 
-
-// Déclarations des fonctions
-void ajouterEleve(Etudiant classe[], int &nbElv);
-void afficherEleves(Etudiant classe[], int nbElv);
-void calculerMoyenne(Etudiant classe[], int nbElv);
-void meilleureNote(Etudiant classe[], int nbElv);
-
+void ajouterEleve(etudiant classe[], int &nbElv);
+// ... le reste de tes fonctions
 #endif
