@@ -1,15 +1,15 @@
 #include <iostream>
-#include "affichageetmoyenne.h" // 1. On donne la définition de 'etudiant'
-#include "rechercheetbest.h"
-#include "saisieetajout.h"         // 2. On donne les prototypes des fonctions
+#include "structure.hpp"
+#include "ajouterEleve.h"
+#include "afficherEleves.h"
+#include "calculerMoyenne.h"
+#include "meilleureNote.h"
 
 using namespace std;
 
 int main() {
-    etudiant etudiants[30];
-    int nbrelv = 0;
+    Liste classe; // 'Liste' est le type (la struct), 'classe' est le nom de la variable
     int choix;
-    int note = 0;
 
     do {
         cout << "MENU" << endl;
