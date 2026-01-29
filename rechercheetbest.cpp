@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void afficherEleves(Etudiant classe[], int nbrelv) {
+void afficherEleves(etudiant classe[], int nbrelv) {
     if (nbrelv == 0) {
         cout << "Aucun eleve." << endl;
     } else {
@@ -13,7 +13,7 @@ void afficherEleves(Etudiant classe[], int nbrelv) {
     }
 }
 
-void meilleureNote(Etudiant classe[], int nbrelv) {
+void meilleureNote(etudiant classe[], int nbrelv) {
     if (nbrelv == 0) {
         cout << "Aucun eleve." << endl;
     } else {

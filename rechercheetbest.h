@@ -1,9 +1,6 @@
 #include <string>
+#include "affichageetmoyenne.h" // <--- AJOUTE ÇA pour que "Etudiant" soit reconnu
 
-struct Etudiant {
-    std::string nom;
-    float note;
-};
 
-void afficherEleves(Etudiant classe[], int nbrelv);
-void meilleureNote(Etudiant classe[], int nbrelv);
+void afficherEleves(etudiant classe[], int nbrelv);
+void meilleureNote(etudiant classe[], int nbrelv);
