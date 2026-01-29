@@ -1,4 +1,4 @@
-#define ELEVES_H
+#define SAISIEETAJOUT_H
 
 #include <string> // Nécessaire pour utiliser std::string
 #include "affichageetmoyenne.h" // <--- AJOUTE ÇA pour que "Etudiant" soit reconnu
