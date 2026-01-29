@@ -1,5 +1,5 @@
 #include <iostream>
-#include "inspecteur.h"
+#include "rechercheetbest.h"
 
 using namespace std;
 
