@@ -1,6 +1,7 @@
 #include <iostream>
 #include "affichageetmoyenne.h" // 1. On donne la définition de 'etudiant'
-#include "menuboucle.h"         // 2. On donne les prototypes des fonctions
+#include "rechercheetbest.h"
+#include "saisieetajout.h"         // 2. On donne les prototypes des fonctions
 
 using namespace std;
 
@@ -21,16 +22,16 @@ int main() {
         cin >> choix;
 
         if (choix == 1) {
-            ajouterEleve(etudiants, nbrelv);
+            ajouterEleve(etudiant, nbrelv);
         }
         else if (choix == 2) {
-            afficherEleves(etudiants, nbrelv);
+            afficherEleves(etudiant, nbrelv);
         }
         else if (choix == 3) {
-            calculerMoyenne(etudiants, nbrelv);
+            calculerMoyenne(etudiant, nbrelv);
         }
         else if (choix == 4) {
-            meilleureNote(etudiants, nbrelv);
+            meilleureNote(etudiant, nbrelv);
         }
         else if (choix == 5) {
             cout << "Fin du programme." << endl;
