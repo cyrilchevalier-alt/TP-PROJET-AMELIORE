@@ -2,7 +2,7 @@
 
 struct etudiant
 {
-    string nom;
+    std::string nom;
     float note;
 };
 
