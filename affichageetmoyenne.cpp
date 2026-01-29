@@ -1,5 +1,5 @@
 #include <iostream>
-#include <affichageetmoyenne.h>
+#include "affichageetmoyenne.h"
 using namespace std;
 
 // Mission 1 : Lister les élèves

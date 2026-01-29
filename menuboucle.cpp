@@ -4,41 +4,42 @@
 
 using namespace std;
 
-void ajouterEleve(etudiant classe[], int &nbElv) {
-    if (nbElv < 30) {
-        cout << "Nom de l'eleve : ";
-        cin >> classe[nbElv].nom;
-        cout << "Note de l'eleve : ";
-        cin >> classe[nbElv].note;
-        nbElv++;
-    } else {
-        cout << "Classe pleine !" << endl;
-    }
-}
+int main() {
+    etudiant etudiants[30];
+    int nbrelv = 0;
+    int choix;
+    int note = 0;
 
-void afficherEleves(etudiant classe[], int nbElv) {
-    cout << "--- Liste des eleves ---" << endl;
-    for (int i = 0; i < nbElv; i++) {
-        cout << classe[i].nom << " : " << classe[i].note << "/20" << endl;
-    }
-}
+    do {
+        cout << "MENU" << endl;
+        cout << "1. Ajouter un eleve" << endl;
+        cout << "2. Afficher les eleves" << endl;
+        cout << "3. Calculer la moyenne" << endl;
+        cout << "4. Meilleure note" << endl;
+        cout << "5. Quitter" << endl;
+        cout << "Choisissez une option : ";
+        cin >> choix;
 
-void calculerMoyenne(etudiant classe[], int nbElv) {
-    if (nbElv == 0) return;
-    float somme = 0;
-    for (int i = 0; i < nbElv; i++) {
-        somme += classe[i].note;
-    }
-    cout << "Moyenne de la classe : " << somme / nbElv << endl;
-}
-
-void meilleureNote(etudiant classe[], int nbElv) {
-    if (nbElv == 0) return;
-    int indexMax = 0;
-    for (int i = 1; i < nbElv; i++) {
-        if (classe[i].note > classe[indexMax].note) {
-            indexMax = i;
+        if (choix == 1) {
+            ajouterEleve(etudiants, nbrelv);
         }
-    }
-    cout << "Meilleur eleve : " << classe[indexMax].nom << " avec " << classe[indexMax].note << "/20" << endl;
+        else if (choix == 2) {
+            afficherEleves(etudiants, nbrelv);
+        }
+        else if (choix == 3) {
+            calculerMoyenne(etudiants, nbrelv);
+        }
+        else if (choix == 4) {
+            meilleureNote(etudiants, nbrelv);
+        }
+        else if (choix == 5) {
+            cout << "Fin du programme." << endl;
+        }
+        else {
+            cout << "Choix invalide." << endl;
+        }
+
+    } while (choix != 5);
+
+    return 0;
 }
