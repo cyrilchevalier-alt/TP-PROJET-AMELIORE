@@ -1,9 +1,8 @@
 #include <iostream>
 #include "structure.hpp"
-#include "ajouterEleve.h"
-#include "afficherEleves.h"
-#include "calculerMoyenne.h"
-#include "meilleureNote.h"
+#include "saisieetajout.h"
+#include "affichageetmoyenne.h"
+#include "rechercheetbest.h"
 
 using namespace std;
 
