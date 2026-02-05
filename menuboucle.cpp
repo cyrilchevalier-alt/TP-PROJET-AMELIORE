@@ -20,7 +20,7 @@ int main() {
         cin >> choix;
 
         if (choix == 1) {
-            ajouterEleves(classe);
+            ajouterEleve(classe);
         }
         else if (choix == 2) {
             afficherEleves(classe);
