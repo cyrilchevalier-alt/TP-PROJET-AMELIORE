@@ -1,7 +1,7 @@
 #include <iostream>
 #include "structure.hpp"
 #include "affichageetmoyenne.h"
-#include "ajouterEleve.h"
+#include "ajoutereleve.h"
 
 using namespace std;
 
