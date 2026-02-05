@@ -1,7 +1,6 @@
 #include <iostream>
 #include "structure.hpp"
 #include "affichageetmoyenne.h"
-#include "ajoutereleve.h"
 
 using namespace std;
 
@@ -20,7 +19,7 @@ int main() {
         cin >> choix;
 
         if (choix == 1) {
-            cout << "Choix invalide." << endl;
+            ajouterEleve(classe);
         }
         else if (choix == 2) {
             afficherEleves(classe);
