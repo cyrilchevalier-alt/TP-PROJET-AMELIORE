@@ -2,20 +2,22 @@
 #include "structure.hpp"
 #include "affichageetmoyenne.h"
 #include "ajoutereleve.h"
+#include "fichierCSV.h" // <-- Nouveau nom ici
 
 using namespace std;
 
 int main() {
-    Liste classe; // 'Liste' est le type (la struct), 'classe' est le nom de la variable
+    Liste classe;
     int choix;
 
     do {
-        cout << "MENU" << endl;
+        cout << "\n--- MENU ---" << endl;
         cout << "1. Ajouter un eleve" << endl;
         cout << "2. Afficher les eleves" << endl;
         cout << "3. Calculer la moyenne" << endl;
         cout << "4. Meilleure note" << endl;
-        cout << "5. Quitter" << endl;
+        cout << "5. Exporter vers CSV" << endl; // <-- Option ajoutée
+        cout << "6. Quitter" << endl;
         cout << "Choisissez une option : ";
         cin >> choix;
 
@@ -28,10 +30,13 @@ int main() {
         else if (choix == 3) {
             calculerMoyenne(classe);
         }
-        else if (choix == 4) {
+        else if (choix == 4) { 
             cout << "Choix invalide." << endl;
         }
         else if (choix == 5) {
+            exporterCSV(classe); // <-- Appel de la fonction
+        }
+        else if (choix == 6) {
             cout << "Fin du programme." << endl;
         }
         else {
