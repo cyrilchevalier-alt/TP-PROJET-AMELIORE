@@ -1,8 +1,6 @@
 #include <iostream>
 #include "structure.hpp"
-#include "saisieetajout.h"
 #include "affichageetmoyenne.h"
-#include "rechercheetbest.h"
 
 using namespace std;
 
@@ -21,16 +19,16 @@ int main() {
         cin >> choix;
 
         if (choix == 1) {
-            ajouterEleve(etudiant, nbrelv);
+            ajouterEleve(classe);
         }
         else if (choix == 2) {
-            afficherEleves(etudiant, nbrelv);
+            afficherEleves(classe);
         }
         else if (choix == 3) {
-            calculerMoyenne(etudiant, nbrelv);
+            calculerMoyenne(classe);
         }
         else if (choix == 4) {
-            meilleureNote(etudiant, nbrelv);
+            meilleureNote(classe);
         }
         else if (choix == 5) {
             cout << "Fin du programme." << endl;

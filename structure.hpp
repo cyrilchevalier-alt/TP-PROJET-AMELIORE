@@ -1,11 +1,18 @@
-struct Etudiant
+#ifndef STRUCTURE_HPP
+#define STRUCTURE_HPP
+#include <string>
+
+using namespace std;
+
+struct Eleve
 {
 
-    std::string nom;
+    string nom;
     float note;
 };
 
-struct nbrelv
+struct Liste
 {
-    int valeur;
+    int nbrelv = 0;
+    Eleve eleves[30];
 };

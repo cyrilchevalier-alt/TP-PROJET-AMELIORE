@@ -3,7 +3,7 @@
 using namespace std;
 
 // Mission 1 : Lister les élèves
-void listerEleves(etudiant tab_classe[], int nbrelv) {
+void afficherEleves(Liste &classe) {
     cout << "--- Liste des eleves ---" << endl;
     for (int i = 0; i < nbrelv; i++) {
         cout << tab_classe[i].nom << " : " << tab_classe[i].note << "/20" << endl;

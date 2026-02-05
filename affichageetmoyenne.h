@@ -1,4 +1,8 @@
+#ifndef AFFICHAGEETMOYENNE_H
+#define AFFICHAGEETMOYENNE_H
+#include "structure.hpp"
 
-void listerEleves(etudiant tab_classe[], int nb_etudiants);
-float moyenne(etudiant tab_classe[], int nb_etudiants);
+void afficherEleves(Liste &classe);
+void calculerMoyenne(Liste &classe);
 
+#endif // AFFICHAGEETMOYENNE_H
