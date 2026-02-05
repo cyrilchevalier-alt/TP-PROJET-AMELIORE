@@ -19,7 +19,7 @@ int main() {
         cin >> choix;
 
         if (choix == 1) {
-            ajouterEleve(classe);
+            cout << "Choix invalide." << endl;
         }
         else if (choix == 2) {
             afficherEleves(classe);
@@ -28,7 +28,7 @@ int main() {
             calculerMoyenne(classe);
         }
         else if (choix == 4) {
-            meilleureNote(classe);
+            cout << "Choix invalide." << endl;
         }
         else if (choix == 5) {
             cout << "Fin du programme." << endl;

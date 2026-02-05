@@ -16,3 +16,5 @@ struct Liste
     int nbrelv = 0;
     Eleve eleves[30];
 };
+
+#endif
